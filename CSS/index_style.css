@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Voltaire&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    /* overflow-x: hidden; */
+}
+
+#header {
+    display: flex;
+    /* background:red; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.background{
+    background: url(/images/COLOR003.jpg);
+    background-size: cover;
+    /* background-blend-mode: darken; */
+    background-repeat: repeat-x;
+}
+
+/* .headerNav .leftNav{
+    /* border: 2px solid rgb(0, 255, 106); */
+/* } */ */
+
+.headerNav .rightNav{
+    align-items: right;
+}
+
+.headerNav .rightNav a{
+    color:white;
+    text-decoration: bold;
+    padding: 12px ;
+    margin: 10px;
+    /* border: 2px solid black; */
+    border-radius:30px ;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.headerNav .rightNav a:hover{
+    background: rgb(255, 255, 255);
+    color:red;
+    text-decoration: underline;
+}
+
+
+.secondSection .intro{
+    padding:50px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+.text-big{
+    font-size: 3rem;
+    text-decoration: bold;
+    margin: 40px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+    color:rgb(194, 33, 47)
+}
+
+.text-bigF{
+    font-size: 3rem;
+    text-decoration: bold;
+    margin: 40px 61px;
+    color:rgb(194, 33, 47);
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+}
+
+.text-sm{
+    font-family: 'Voltaire', sans-serif;
+}
+
+.orderBtn{
+ /* border: 2px solid red; */
+ text-align: center;
+ margin: 30px;
+}
+.orderBtn .btn-sm{
+        border: 2px solid rgb(194, 33, 47);
+        border-radius: 20px;
+        color: rgb(194, 33, 47);
+        padding: 15px;
+        font-family: 'Josefin Sans', sans-serif;
+        width: 10rem;
+}
+.btn-sm:hover{
+    border:2px solid rgb(255,255,255);
+    background:rgb(194, 33, 47);
+    color: white;
+}
+
+.thirdSection{
+    display: flex;
+    flex-direction: row;
+    background: whitesmoke;
+}
+
+.thirdSection .franchiseForm{
+    width: 50%;
+    /* border:2px solid greenyellow; */
+}
+
+.thirdSection .franchiseForm .form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.thirdSection .franchiseForm .form input{
+    margin: 20px 0px;
+    padding: 10px 20px;
+    /* outline:none; */
+    border: 0px 0px 2px 0px;
+    font-family: 'Voltaire', sans-serif;
+    border-radius: 8px;
+    /* border-color: rgb(196, 192, 192); */
+    
+}
+
+/* .thirdSection .franchiseForm .form input:click{
+    outline:none;
+} */
+
+.thirdSection .franchiseForm .form .sb-btn{
+    background: rgb(194, 33, 47);
+    border: none;
+    outline: none;
+    color:white;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+.thirdSection .franchiseForm .form .sb-btn:hover{
+    outline:none;
+    cursor:pointer;
+}
+
+
+.thirdSection .franchiseDetails{
+    width:50%;
+    /* border:2px solid green; */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.thirdSection .franchiseDetails .text-sm2{
+    text-decoration: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.productHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.productRange{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.productRange .card{
+    margin: 50px;
+    text-align: center;
+}
+.card-body h4{
+    font-family: "Josefin Sans", sans-serif;
+}
+.card-text{
+    font-family: "Voltaire", sans-serif;
+    list-style: none;
+}
+.card-text ul{
+    list-style:none;
+}
+
+.mediaHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mediaSection{
+    display: flex;
+    flex-direction: row;
+    /* height: 30vh; */
+    align-items: center;
+    justify-content: center;
+}
+.mediaSection .mediaPics{
+    text-align: center;
+}
+.mediaSection .mediaPics img{
+    width:30%;
+    margin: 10px;
+}
+
+.footer{
+    background-color: rgb(194,33,40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    /* border: 2px solid red; */
+    font-family:"Voltaire", sans-serif;
+}
+.footer .footLogo{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid rgb(251, 255, 0); */
+    width: 70%;
+    padding: 1rem;
+    align-items: left;
+    justify-content: flex-start;
+    color:white
+}
+.footer .footLogo .text-sm{
+    padding: 1rem 0rem;
+}
+.footer .footLogo img{
+    width: 20%;
+}
+.footer .footSocial{
+    width: 50%;
+    /* border: 2px solid pink; */
+    color:white;
+}
+
+.footer .footSocial .contactList{
+    /* list-style-type: none; */
+    padding: 1rem;
+}
+
+.footer .footSocial i{
+    color:white;
+    margin: 0.5rem;
+    width: 2rem;
+
+}
+
+
